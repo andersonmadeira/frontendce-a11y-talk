@@ -65,3 +65,4 @@ Que podem ser usadas pra checar por problemas de acessibilidade:
 - Rob Dodson - a11y casts
   - https://www.youtube.com/watch?v=HtTyRajRuyY&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g
 - Chrome DevTools Accessibility Reference - https://developers.google.com/web/tools/chrome-devtools/accessibility/reference
+- WAI-ARIA Authoring Practices:  https://www.w3.org/TR/wai-aria-practices-1.1/

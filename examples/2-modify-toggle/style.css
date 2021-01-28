@@ -1,0 +1,8 @@
+.custom_toggle {
+  color: white;
+  background-color: black;
+}
+
+.custom_toggle[aria-checked='true'] {
+  background-color: blue;
+}

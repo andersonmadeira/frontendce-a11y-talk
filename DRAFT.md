@@ -21,11 +21,12 @@ De acordo com o relatório da OMS : https://www.who.int/teams/noncommunicable-di
 - melhorias graduais na UI ajudam a criar UI mais acessíveis
 - Nem sempre o design tem que ditar a implementação
 - atributos aria
+
   - modificam a accessibility tree
   - adicionar semântica onde não existe
   - modificar semântica existente
   - até expressar padrões ou components de UI que não é possível com HTML puro. Ex. Tree tag
-  - adiciona rótulos e descrição. botão somente imagem 
+  - adiciona rótulos e descrição. botão somente imagem
   - não mudam aparência, comportamento, foco, manipulação de eventos de teclado
 
 - Focus: Conteúdo fora da tela (ex. sidebars) ainda capturam foco. Experiência confusa para pessoas que dependem no uso do teclado com TAB. Ainda mais se a sidebar for complexa. Prevenir que elementos escondidos peguem o foco do teclado:
@@ -58,6 +59,19 @@ Que podem ser usadas pra checar por problemas de acessibilidade:
 - teste automático com Lighthouse
 - lições pra nos ajudar a melhorar acessibilidade
 
+1. semântica: usar elementos nativos
+2. focus: elementos dentro e fora de vista
+3. contraste: a importância de
+   ARIA:
+4. adicionar comportamento
+5. modificar comportamento
+6. novos padrões não existentes nativamente
+7. descrição extra onde não é possível usar alt em imagens
+8. relacionamentos
+   others:
+9. reordering
+10. A UX da UI melhora quando focamos em UIs acessíveis
+
 ## Referências
 
 - https://www.24a11y.com/2019/what-a-year-of-learning-and-teaching-accessibility-taught-me
@@ -65,4 +79,4 @@ Que podem ser usadas pra checar por problemas de acessibilidade:
 - Rob Dodson - a11y casts
   - https://www.youtube.com/watch?v=HtTyRajRuyY&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g
 - Chrome DevTools Accessibility Reference - https://developers.google.com/web/tools/chrome-devtools/accessibility/reference
-- WAI-ARIA Authoring Practices:  https://www.w3.org/TR/wai-aria-practices-1.1/
+- WAI-ARIA Authoring Practices: https://www.w3.org/TR/wai-aria-practices-1.1/

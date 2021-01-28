@@ -1,40 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>frontendce - a11y</title>
+    <title>frontendce - a11y</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/simple.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <div class="content">
+            <h2>10 lições que aprendi com</h2>
+            <h1 style="text-transform: lowercase">a11y</h1>
+            <h3>Anderson Madeira</h3>
+          </div>
+        </section>
+        <section>
+          <h3>O que é acessibilidade?</h3>
+          <p>web acessível para <b>todos</b> com deficiência ou não</p>
+        </section>
+        <section>
+          <h1>foco</h1>
+          <img src="img/Yodapush.png" alt="Yoda sabe como usar o foco" />
+        </section>
+        <section>
+          <ul>
+            <li>selecionar um elemento e direcionar todos os eventos de keyboard para ele</li>
+            <li>ter uma sequência lógica de foco na página (<i>tab order</i>)</li>
+            <li>tab order é inferida pela ordem dos elmentos no DOM</li>
+            <li>
+              usuário com deficiência visual precisam focar elementos interativos para conseguir ver
+              a tela
+            </li>
+          </ul>
+          <a href="examples/0-focus">Exemplo Prático</a>
+          <!-- algumas pessoas não podem usar mouse, pessoas com deficiências na mão, como Síndrome do túnel do carpo ou pessoas cegas que tem que usar um leitor de tela -->
+        </section>
+        <section>
+          <h1>Contraste</h1>
+        </section>
+        <section>
+          <h1>
+            Use elementos nativos!
+            <span aria-label="Image de lâmpada representando uma nova ideia">💡</span>
+          </h1>
+          <p>Já tem acessbilidae: contraste, foco, aparência, e etc</p>
+          <h3>Principal: semântica (implícita e explícita)</h3>
+          <p>semântica expressa o que é possível fazer com aquele elemento</p>
+        </section>
+        <section>
+          <h1>WAI-ARIA</h1>
+        </section>
+        <section>
+          <h3>Semântica:</h3>
+          <ul>
+            <li>Adicionar <a href="examples/1-add-checkbox">(exemplo)</a></li>
+            <li>Modificar <a href="examples/2-modify-toggle/">(exemplo)</a></li>
+            <li>Novos padrões <a href="examples/3-new-patterns-tree/">(exemplo)</a></li>
+            <li>Descrever <a href="examples/4-extra-description/">(exemplo)</a></li>
+            <li>Relacionamentos</li>
+          </ul>
+        </section>
+        <section>
+          <h3>
+            A UX da UI melhora quando focamos em UIs acessíveis
+            <span aria-label="Ícone de Brilhos indicando alegria e otimismo">✨</span>
+          </h3>
+        </section>
+      </div>
+    </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      })
+    </script>
+  </body>
 </html>
